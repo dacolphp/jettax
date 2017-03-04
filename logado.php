@@ -4,7 +4,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Gettax - Home</title>
+    <title>Jettax - Home</title>
 
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/crumina-fonts.css">
@@ -50,7 +50,7 @@
                     <a href="index.html" class="full-block-link"></a>
                     <img src="img/logo-eye.png" alt="Seosight">
                     <div class="logo-text">
-                        <div class="logo-title">gettax</div>
+                        <div class="logo-title">Jettax</div>
                         <div class="logo-sub-title">Automação de Nfs-e</div>
                     </div>
                 </div>
@@ -92,10 +92,10 @@
                             </ul>
                         </li>
 						  <li class="">
-                            <a href="14_blog.html">Consultar Dados</a>
+                            <a href="consultar.php">Consultar Dados</a>
                         </li>
                         <li class="">
-                            <a href="14_blog.html">Configurações</a>
+                            <a href="configuracoes.php">Configurações</a>
                         </li>
                         <li class="">
                             <button class="btn btn-medium btn--orange btn-hover-shadow js-open-aside">
@@ -146,8 +146,9 @@
 
                     </div>
 
-                    <div class="btn btn-medium btn--dark btn-hover-shadow mb30">
+                    <div class="btn btn-medium btn--light-green btn-hover-shadow mb30">
                         <span class="text">Baixar o Pacote</span>
+                        <i class="seoicon-arrow-to-bottom"></i>
                         <span class="semicircle"></span>
                     </div>
                 </div>

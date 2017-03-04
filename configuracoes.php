@@ -75,7 +75,7 @@
                             <a href="logado.php">Dashboard</a>
                         </li>
 
-                        <li class="active">
+                        <li class="">
                             <a href="#">Gestão de Clientes</a>
                             <ul class="dropdown">
                                
@@ -94,7 +94,7 @@
 						  <li class="">
                             <a href="consultar.php">Consultar Dados</a>
                         </li>
-                        <li class="">
+                        <li class="active">
                             <a href="configuracoes.php">Configurações</a>
                         </li>
                         <li class="">
@@ -123,100 +123,64 @@
 <div class="content-wrapper">
     <div class="header-spacer"></div>
 
-<div class="container-fluid">
-
-    <div class="row bg-boxed-black medium-padding120">
-
-        <div class="container">
-			
-            <div>
-	<div class="heading">
-
-            <h4 class="h1 heading-title" style="color:#FFF;">Cadastrar Cliente</h4>
-
-            <div class="heading-line">
-                <span class="short-line"></span>
-                <span class="long-line"></span>
-            </div>
-
-
-        </div>
-                <form class="contact-form" method="post" action="send_mail.php">
-
-                    <div class="col-lg-8 col-lg-offset-2 col-md-12 col-md-offset-0 col-sm-12 col-xs-12">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <label for="contact_website" class="input-title">Digite a Razão Social do cliente<abbr class="required" title="required">*</abbr></label>
-                            <span class="checked-icon">
-                                <input class="email focus-white input-standard-grey input-dark" id="contact_website" name="permalink" required="" placeholder="" type="url">
-                            </span>
-                        </div>
-                    </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="contact_name" class="input-title">CNPJ<abbr class="required" title="required">*</abbr></label>
-                                <span class="checked-icon">
-                                    <input class="email focus-white input-standard-grey input-dark" id="contact_name" required="" name="name" placeholder="" type="text">
-                                  </span>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <label for="contact_email" class="input-title">Senha Web<abbr class="required" title="required">*</abbr></label>
-                                <span class="checked-icon">
-                                    <input class="email focus-white input-standard-grey input-dark" id="contact_email" required="" name="email" placeholder="" type="text">
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                <label for="contact_phone" class="input-title">Apelido <span class="optional">(optional)</span></label>
-
-                                <input class="email focus-white input-standard-grey input-dark" id="contact_phone" name="phone" placeholder="" type="text">
-
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                <label for="contact_company" class="input-title">E-mail do Responsável <span class="optional">(optional)</span></label>
-
-                                <input class="email focus-white input-standard-grey input-dark" id="contact_company" name="company" placeholder="" type="text">
-
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <label for="contact_details" class="input-title">Observações</label>
-                                <textarea class="email focus-white input-standard-grey input-dark" id="contact_details" name="message" placeholder=""></textarea>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="submit-block table">
-                                <div class="col-lg-5 table-cell">
-                                    <button class="btn btn-medium btn--green btn-hover-shadow">
-                                        <span class="text">Cadastrar</span>
-                                        <span class="semicircle"></span>
-                                    </button>
-                                </div>
-
-                                <div class="col-lg-7 table-cell">
-                                    <div class="submit-block-text">
-                                        A senha web é gravada em um banco de dados através de um ambiente seguro. Garantimos a segurança das informações.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="container">
+    <div class="row medium-padding120">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="heading">
+                <h4 class="h1 heading-title">Configurações de Processamento</h4>
+                <div class="heading-line">
+                    <span class="short-line"></span>
+                    <span class="long-line"></span>
                 </div>
 
-                </form>
+                <h5 class="heading-subtitle">Selecione duas datas para que o sejam processadas as consultas das Nfs.</h5>
 
+                <p>O segundo processamento trará somente as alterações em relação ao primeiro.
+                </p>
             </div>
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+
+            <form class="contact-form" method="post" action="send_mail.php">
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="permalink" class="email input-standard-grey" placeholder="Data para o 1º Processamento" type="url">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="name" class="email input-standard-grey" required="" placeholder="Hora para o 1º Processamento" type="text">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="email" class="email input-standard-grey" required="" placeholder="Data para o 2º Processamentos" type="email">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input name="phone" class="email input-standard-grey" placeholder="Hora para o 2º Processamento" type="text">
+                    </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input name="phone" class="email input-standard-grey" placeholder="E-mail para o recebimento das notificações" type="text">
+                    </div>
+			  </div>
+                <div class="submit-block">
+                    <div class="row table">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 table-cell">
+                            <button class="btn btn-medium btn--breez btn-hover-shadow">
+                                <span class="text">Salvar</span>
+                                <span class="semicircle"></span>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 table-cell">
+                            <div class="submit-block-text">
+                                Aviso, o horário de agendamento de processamento é limitado das 19:00h às 08:00h.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

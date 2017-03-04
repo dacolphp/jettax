@@ -4,7 +4,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Gettax - Home</title>
+    <title>Jettax - Home</title>
 
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/crumina-fonts.css">
@@ -50,7 +50,7 @@
                     <a href="index.html" class="full-block-link"></a>
                     <img src="img/logo-eye.png" alt="Seosight">
                     <div class="logo-text">
-                        <div class="logo-title">gettax</div>
+                        <div class="logo-title">Jettax</div>
                         <div class="logo-sub-title">Automação de Nfs-e</div>
                     </div>
                 </div>
@@ -92,10 +92,10 @@
                             </ul>
                         </li>
 						  <li class="">
-                            <a href="14_blog.html">Consultar Dados</a>
+                            <a href="consultar.php">Consultar Dados</a>
                         </li>
                         <li class="">
-                            <a href="14_blog.html">Configurações</a>
+                            <a href="configuracoes.php">Configurações</a>
                         </li>
                         <li class="">
                             <button class="btn btn-medium btn--orange btn-hover-shadow js-open-aside">
@@ -126,9 +126,22 @@
     <div class="row bg-border-color medium-padding120">
         <div class="container">
             <div class="row">
-
+				
                 <div class="col-lg-12">
-					<div class="subscribe">
+				
+                <div class="heading">
+
+            <h4 class="h1 heading-title">Listar Clientes</h4>
+
+            <div class="heading-line">
+                <span class="short-line"></span>
+                <span class="long-line"></span>
+            </div>
+
+
+        </div>
+                
+                	<div class="subscribe">
                     <form class="subscribe-form" method="post" action="import.php">
                             <input class="email input-standard-grey input-white" name="email" required="required" placeholder="Buscar..." type="email">
                             <button class="subscr-btn" style="background-color:#55d5d3">Buscar

@@ -32,6 +32,92 @@
 
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
+	<style>
+
+		.trListagem1:hover, .trListagem2:hover{
+			background-color:#dedede;
+		}
+		
+		.trListagem2{
+			height:40px; background-color:#F3F3F3;
+		}
+		
+		.trListagem1{
+			height:40px;
+		}
+		
+		.descricaoTabela{
+			margin-top: 20px;;
+			font-size: 13px;
+			font-weight: 400;
+			color: #2f2c2c;
+			font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;	
+			text-align:center;
+		}
+		
+		.cabTabela{
+			height:60px;
+			background-color:#E9E9E9;
+		}
+		.cabTabelaItem{
+			margin-top:15px;
+		}
+		.btn-info{
+			background-color: #65BBD6;
+			border-color: #65BBD6;
+			color: #FFFFFF;
+			display: inline-block;
+			padding: 6px;
+			margin-bottom: 0;
+			font-size: 10px;
+			width:80px;
+			height:25px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			background-image: none;
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+		
+		.label{
+			display: inline;
+			padding: .2em .6em .3em;
+			font-size: 75%;
+			font-weight: 700;
+			line-height: 1;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: baseline;
+			border-radius: .25em;	
+		}
+		
+		.ativo{
+			background-color:#5cb85c;
+		}
+		
+		.bloqueado{
+			background-color:#d9534f;
+		}
+		
+		.dataTables_paginate{
+			    float: right;
+			    margin: 0px;
+				margin-right: 15px !important;
+		}
+
+		
+    </style>
 </head>
 
 
@@ -75,7 +161,7 @@
                             <a href="logado.php">Dashboard</a>
                         </li>
 
-                        <li class="">
+                        <li class="active">
                             <a href="#">Gestão de Clientes</a>
                             <ul class="dropdown">
                                
@@ -94,7 +180,7 @@
 						  <li class="">
                             <a href="consultar.php">Consultar Dados</a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a href="configuracoes.php">Configurações</a>
                         </li>
                         <li class="">
@@ -122,75 +208,226 @@
 
 <div class="content-wrapper">
     <div class="header-spacer"></div>
+<div class="container-fluid">
+    <div class="row bg-border-color medium-padding120">
+        <div class="container">
+            <div class="row">
+				
+                <div class="col-lg-12">
+				
+                <div class="heading">
 
-<div class="container">
-    <div class="row medium-padding120">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-            <div class="heading">
-                <h4 class="h1 heading-title">Configurações de Processamento</h4>
-                <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
-                </div>
+            <h4 class="h1 heading-title">LOG - Downlaods 03/02/2017</h4>
 
-                <h5 class="heading-subtitle">Selecione duas datas para que o sejam processadas as consultas das Nfs.</h5>
-
-                <p>O segundo processamento trará somente as alterações em relação ao primeiro.
-                </p>
+            <div class="heading-line">
+                <span class="short-line"></span>
+                <span class="long-line"></span>
             </div>
+
+
         </div>
-
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-
-            <form class="contact-form" method="post" action="send_mail.php">
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="permalink" class="email input-standard-grey" placeholder="Data para o 1º Processamento" type="url">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="name" class="email input-standard-grey" required="" placeholder="Hora para o 1º Processamento" type="text">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="email" class="email input-standard-grey" required="" placeholder="Data para o 2º Processamentos" type="email">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="phone" class="email input-standard-grey" placeholder="Hora para o 2º Processamento" type="text">
-                    </div>
-                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input name="phone" class="email input-standard-grey" placeholder="E-mail para o recebimento das notificações" type="text">
-                    </div>
-                    <br /><br />
-					 <p>Dados da Contabilidade, para acesso às informações dos clientes:</p>
-                    <br />
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="email" class="email input-standard-grey" required="" placeholder="CNPJ" type="email">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="phone" class="email input-standard-grey" placeholder="Senha Web" type="text">
-                    </div>
-			  </div>
-                <div class="submit-block">
-                    <div class="row table">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 table-cell">
-                            <button class="btn btn-medium btn--breez btn-hover-shadow">
-                                <span class="text">Salvar</span>
-                                <span class="semicircle"></span>
+                
+                	<div class="subscribe">
+                    <form class="subscribe-form" method="post" action="import.php">
+                            <input class="email input-standard-grey input-white" name="email" required="required" placeholder="Buscar..." type="email">
+                            <button class="subscr-btn" style="background-color:#55d5d3">Buscar
+                                <span class="semicircle--right"></span>
                             </button>
-                        </div>
-
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 table-cell">
-                            <div class="submit-block-text">
-                                Aviso, o horário de agendamento de processamento é limitado das 19:00h às 08:00h.
-                            </div>
-                        </div>
+                        </form>
+                    </div>
+                  
+                                      <table class="listagem">
+                                                <thead>
+                                                    <tr class="cabTabela">
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-briefcase cabTabelaItem"></i> Razão Social </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa  fa-money cabTabelaItem"></i> NF Serviço Prestado </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-shopping-cart cabTabelaItem"></i> NF Serviço Tomado </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-shopping-cart cabTabelaItem"></i> NFTS </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-barcode cabTabelaItem"></i> Guia ISS </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cloud cabTabelaItem"></i> Status </th>
+                                                            <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-bullhorn cabTabelaItem"></i> Motivo </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                   <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 20 </td>
+                                                        <td class="descricaoTabela"> 12 </td>
+                                                        <td class="descricaoTabela"> 4 </td>
+                                                         <td class="descricaoTabela"> Sim </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Baixado</span> </td>
+                                                        <td class="descricaoTabela"> - </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 103 </td>
+                                                        <td class="descricaoTabela"> 234 </td>
+                                                        <td class="descricaoTabela"> 3 </td>
+                                                        <td class="descricaoTabela"> Não </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Erro</span> </td>
+                        							    <td class="descricaoTabela"> Procração não cadastrada </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+									<div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navigation">
+    
+                            <a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>2</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>3</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>4</span></a>
+    
+                        </nav>
                     </div>
                 </div>
-            </form>
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

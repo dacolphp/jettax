@@ -31,7 +31,105 @@
     <!--External fonts-->
 
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<style>
+			.product-description:before{background-color:#f7f9f9}
+			
 
+
+		.trListagem1:hover, .trListagem2:hover{
+			background-color:#dedede;
+		}
+		
+		.trListagem2{
+			height:40px; background-color:#F3F3F3;
+		}
+		
+		.trListagem1{
+			height:40px;
+		}
+		
+		.descricaoTabela{
+			margin-top: 20px;;
+			font-size: 13px;
+			font-weight: 400;
+			color: #2f2c2c;
+			font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;	
+			text-align:center;
+		}
+		
+		.descricaoTabela2{
+			margin-top: 20px;;
+			font-size: 13px;
+			font-weight: 400;
+			color: #2f2c2c;
+			font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;	
+			padding-left:20px;
+		}
+		
+		.cabTabela{
+			height:60px;
+			background-color:#E9E9E9;
+		}
+		.cabTabelaItem{
+			margin-top:15px;
+		}
+		.btn-info{
+			background-color: #65BBD6;
+			border-color: #65BBD6;
+			color: #FFFFFF;
+			display: inline-block;
+			padding: 6px;
+			margin-bottom: 0;
+			font-size: 10px;
+			width:80px;
+			height:25px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			background-image: none;
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+		
+		.label{
+			display: inline;
+			padding: .2em .6em .3em;
+			font-size: 75%;
+			font-weight: 700;
+			line-height: 1;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: baseline;
+			border-radius: .25em;	
+		}
+		
+		.ativo{
+			background-color:#5cb85c;
+		}
+		
+		.bloqueado{
+			background-color:#d9534f;
+		}
+		
+		.dataTables_paginate{
+			    float: right;
+			    margin: 0px;
+				margin-right: 15px !important;
+		}
+
+		
+			
+	</style>
 </head>
 
 
@@ -126,78 +224,22 @@
         <div class="row bg-border-color medium-padding120">
             <div class="container">
                 <div class="row">
-                    
                     <div class="col-lg-12">
-                    
-                    <div class="heading">
-    
-                <h4 class="h1 heading-title">Consultar Dados</h4>
-    
-                <div class="heading-line">
-                    <span class="short-line"></span>
-                    <span class="long-line"></span>
-                </div>
-    
-    
-            </div>
-                        
-                        <div class="books-grid">
-                            <div class="books-grid-control">
-                                <div class="sort">
-                                       <select style="display: none;">
-                                           <option data-display="1">Selecione o Mês</option>
-                                           <option value="2">Fevereiro</option>
-                                           <option value="2">Fevereiro</option>
-                                           <option value="3">Março</option>
-                                           <option value="4">Abril</option>
-                                           <option value="5">Maio</option>
-                                           <option value="6">Junho</option>
-                                           <option value="7">Julho</option>
-                                           <option value="8">Agosto</option>
-                                           <option value="9">Setembro</option>
-                                           <option value="10">Outubro</option>
-                                           <option value="11">Novembro</option>
-                                           <option value="12">Dezembro</option>
-                                       </select>
-                                       <div class="nice-select" style="background-color:#FFF; cursor:pointer;" tabindex="0">
-                                            <span class="current">Selecione o Mês</span>
-                                            <ul class="list">
-                                                <li data-value="1" data-display="1" class="option selected focus">Janeiro</li>
-                                                <li data-value="2" class="option">Fevereiro</li>
-                                                <li data-value="3" class="option">Março</li>
-                                                <li data-value="4" class="option">Abril</li>
-                                                <li data-value="5" class="option">Maio</li>
-                                                <li data-value="6" class="option">Junho</li>
-                                                <li data-value="7" class="option">Julho</li>
-                                                <li data-value="8" class="option">Agosto</li>
-                                                <li data-value="9" class="option">Setembro</li>
-                                                <li data-value="10" class="option">Outubro</li>
-                                                <li data-value="11" class="option">Novembro</li>
-                                                <li data-value="12" class="option">Dezembro</li>
-                                             </ul>
-                                        </div>
-                                </div>
-                                <div class="sort">
-                                       <select style="display: none;">
-                                           <option data-display="1">Selecione o Ano</option>
-                                           <option value="2017">2017</option>
-                                           <option value="2018">2018</option>
-                                           <option value="2019">2019</option>
-                                           <option value="2020">2020</option>
-                                       </select>
-                                       <div class="nice-select" style="background-color:#FFF; cursor:pointer;" tabindex="0">
-                                            <span class="current">Selecione o Ano</span>
-                                            <ul class="list">
-                                                <li data-value="2017" data-display="2017" class="option selected focus">2017</li>
-                                                <li data-value="2018" class="option">2018</li>
-                                                <li data-value="2019" class="option">2019</li>
-                                                <li data-value="2020" class="option">2020</li>
-                                             </ul>
-                                        </div>
-                                </div>
+                        <div class="heading">
+                            <h4 class="h1 heading-title">Consultar Dados</h4>
+                            <div class="heading-line">
+                                <span class="short-line"></span>
+                                <span class="long-line"></span>
                             </div>
-                       </div>     
-                        
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                       <div class="subscribe">
+                           <input type="text" placeholder="Data Inicial" class="input-standard-grey input-white datepicker-input datepicker" style="display:inline; width:250px">
+                           <input type="text" placeholder="Data Final" class="input-standard-grey input-white datepicker-input datepicker" style="display:inline; width:250px; margin-left:20px">
+                       </div>    
+                    </div>
+                    <div class="col-lg-6">
                         <div class="subscribe">
                         <form class="subscribe-form" method="post" action="import.php">
                                 <input class="email input-standard-grey input-white" name="email" required="required" placeholder="Buscar..." type="email">
@@ -206,479 +248,482 @@
                                 </button>
                             </form>
                         </div>
-                      
-                                
-                        <div class="product-description">
-            <div class="container">
-
-                <ul class="product-description-control" role="tablist">
-
-                    <li role="presentation" class="active">
-                        <a href="#product-description" role="tab" data-toggle="tab" class="description control-item" aria-expanded="false">Serviços Prestados <span>(34)</span></a>
-                    </li>
-
-                    <li role="presentation" class="">
-                        <a href="#product-reviews" role="tab" data-toggle="tab" class="reviews control-item" aria-expanded="true">Serviços Tomados <span>(12)</span></a>
-                    </li>
-                   
-                </ul>
-
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade active in" id="product-description">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                
-                               <form action="#" method="post" class="cart-main">
-    
-                            <table class="shop_table cart">
-                                <thead class="cart-product-wrap-title-main">
-                                <tr>
-                                    <th class="product-remove">&nbsp;</th>
-                                    <th class="product-thumbnail">Cliente</th>
-                                    <th class="product-price">CNPJ</th>
-                                    <th class="product-quantity">Data</th>
-                                    <th class="product-subtotal">Valor</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-    
-                                <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-                              <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    
-                                </tbody>
-                            </table>
-    
-    
-                        </form>
-                                
-                            </div>
-                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="product-reviews">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                 <form action="#" method="post" class="cart-main">
-    
-                            <table class="shop_table cart">
-                                <thead class="cart-product-wrap-title-main">
-                                <tr>
-                                    <th class="product-remove">&nbsp;</th>
-                                    <th class="product-thumbnail">Fornecedor</th>
-                                    <th class="product-price">CNPJ</th>
-                                    <th class="product-quantity">Data</th>
-                                    <th class="product-subtotal">Valor</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-    
-                                <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-                              <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    <tr class="cart_item">
-    
-                                    <td class="product-remove">
-                                       <a href="#" class="product-del remove" title="Abir Nfs-e">
-                                           <i class="seoicon-loupe" style="color:#55d5d3"></i>
-                                        </a>
-                                        
-                                    </td>
-    
-                                    <td class="product-thumbnail">
-    
-                                        <div class="cart-product__item">
-                                          <div class="cart-product-content">
-                                                <p class="cart-author">Nº. 234</p>
-                                                <h6 class="cart-product-title">Contjet Contabilidade LTDA - EPP</h5>
-                                            </div>
-                                        </div>
-                                    </td>
-    
-                                    <td class="product-price">
-                                        <h6 class="price amount">43.432.435/0001-45</h5>
-                                    </td>
-    
-                                    <td class="product-quantity">
-    
-                                        <div class="quantity">
-                                            26/01/2017
-                                        </div>
-    
-                                    </td>
-    
-                                    <td class="product-subtotal">
-                                        <h6 class="total amount">R$ 2.990,00</h5>
-                                    </td>
-    
-                                </tr>
-    
-    
-                                </tbody>
-                            </table>
-    
-    
-                        </form>
-
-
-                            </div>
-
-                        </div>
-
-                        
-                    </div>
-                </div>
-
-            </div>
-        </div>
-                       
-    
-                       <div class="row" style=" background-color:#FFF;">
+                    <div class="col-lg-12">
+                    	<br /><br /><br />
+                       <div class="product-description" style="background-color:#f7f9f9;">
+                       		<div class="container" style="background-color:#f7f9f9;">
+                               <ul class="product-description-control" role="tablist" style="background-color:#f7f9f9;">
+                                    <li class="description active" role="presentation">
+                                        <a href="#tab-description" role="tab" data-toggle="tab" class="control-item" style="border-radius:50px 0 0 0; margin-right:-4px; border-left:2px solid #e3e9e9;"> Vendas de Serviços </a>
+                                     </li>
+                                     <li class="additional_information " role="presentation"> 
+                                        <a href="#tab-additional_information" role="tab" data-toggle="tab" class="control-item" style="border-radius:0 0 0 0"> Compras de Serviços </a>
+                                      </li>
+                                      <li class="reviews " role="presentation"> 
+                                        <a href="#tab-reviews" role="tab" data-toggle="tab" class="control-item" style="border-radius:0 50px 0 0"> NFTS </a>
+                                       </li>
+                                  </ul>
+                                            <div class="tab-content">
+                                            	<div role="tabpanel" class="tab-pane fade active in" id="tab-description">
+                                                	<div class="row">
+                                                    	<div class="col-lg-12">
+                                                           	 <table class="listagem">
+                                                <thead>
+                                                    <tr class="cabTabela">
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-briefcase cabTabelaItem"></i> Fornecedor (Nº NF) </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-user cabTabelaItem"></i> CNPJ </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-calendar cabTabelaItem"></i> Data </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-money cabTabelaItem"></i> Valor </th>
+                                                            <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cogs cabTabelaItem"></i> Serviço </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cloud cabTabelaItem"></i> Status </th>
+                                                        <th> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                   <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Cancelada</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+									<div class="row">
                     <div class="col-lg-12">
                         <nav class="navigation">
     
                             <a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>2</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>3</span></a>
-                            <a href="#" class="page-numbers bg-border-color"><span>4</span></a>
-                            <a href="#" class="page-numbers next">
-                                <svg class="btn-next">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-                                </svg>
-                            </a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>2</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>3</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>4</span></a>
     
                         </nav>
                     </div>
                 </div>
+                                                        </div>
+                                                      </div>
+                                               </div>
+                                               <div role="tabpanel" class="tab-pane fade" id="tab-additional_information">
+                                               		<div class="row">
+                                                    	<div class="col-lg-12">
+                                                        	<table class="listagem">
+                                                <thead>
+                                                    <tr class="cabTabela">
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-briefcase cabTabelaItem"></i> Fornecedor (Nº NF) </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-user cabTabelaItem"></i> CNPJ </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-calendar cabTabelaItem"></i> Data </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-money cabTabelaItem"></i> Valor </th>
+                                                            <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cogs cabTabelaItem"></i> Serviço </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cloud cabTabelaItem"></i> Status </th>
+                                                        <th> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                   <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Cancelada</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+									<div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navigation">
     
+                            <a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>2</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>3</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>4</span></a>
+    
+                        </nav>
                     </div>
+                </div>
+                                                            
+                                                         </div>
+                                                    </div>
+                                              </div>
+                                             <div role="tabpanel" class="tab-pane fade" id="tab-reviews">
+                                             		<div class="row"><div class="col-lg-12">
+                                                    		<table class="listagem">
+                                                <thead>
+                                                    <tr class="cabTabela">
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-briefcase cabTabelaItem"></i> Cliente (Nº NF) </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-user cabTabelaItem"></i> CNPJ </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-calendar cabTabelaItem"></i> Data </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-money cabTabelaItem"></i> Valor </th>
+                                                            <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cogs cabTabelaItem"></i> Serviço </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-cloud cabTabelaItem"></i> Status </th>
+                                                        <th> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                   <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1023)</span>
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> 10/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 1.403,00 </td>
+                                                        <td class="descricaoTabela"> Serviços de Contabilidade </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2" height="10">
+                                                        <td class="descricaoTabela2">
+                                                            <span style="display:block; font-size:10px; font-weight:bold;">(1024)</span>
+                                                           	Levitron Web Works
+                                                        </td>
+                                                        <td class="descricaoTabela"> 43.542.435/0001-43 </td>
+                                                        <td class="descricaoTabela"> 12/01/2017 </td>
+                                                        <td class="descricaoTabela"> R$ 103.433,00 </td>
+                                                        <td class="descricaoTabela"> Auditoria de Demonstrações Contábeis </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Cancelada</span> </td>
+                                                        <td>
+                                                               <a class="btn btn-info js-open-search" style="width:40px; margin-left:10px;"><i class="fa fa-search" style="margin-left:0px;"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+									<div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navigation">
     
+                            <a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>2</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>3</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>4</span></a>
+    
+                        </nav>
+                    </div>
+                </div>
+                   									 </div>
+                   							 </div>
+                    		
+                            
+                            		</div>
+                          		</div>
+                       		</div>
+                       	</div>
+                      </div>  
                 </div>
             </div>
         </div>
@@ -931,21 +976,21 @@
 
 <!-- Overlay Search -->
 
-<div class="overlay_search">
+<div class="overlay_search overlay_search-close" style="text-align:center;">
     <div class="container">
         <div class="row">
-            <div class="form_search-wrap">
-                <form>
-                    <input class="overlay_search-input" placeholder="Digite e aperte 'Enter'..." type="text">
+            <div class="form_search-wrap" style="">
+						<img style="position:absolute; margin-top:-300px; margin-left:-200px;" width="470" src="https://nfe.prefeitura.sp.gov.br/contribuinte/notaprintImg.aspx?inscricao=21877238&nf=1749&verificacao=UKWDSSBU" />
+        
                     <a href="#" class="overlay_search-close">
                         <span></span>
                         <span></span>
                     </a>
-                </form>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- End Overlay Search -->
 
@@ -955,12 +1000,15 @@
 <script src="js/crum-mega-menu.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/theme-plugins.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/form-actions.js"></script>
 
 <script src="js/velocity.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
+
 
 <!-- ...end JS Script -->
 

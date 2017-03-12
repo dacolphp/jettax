@@ -19,7 +19,26 @@ $(function () {
         });
 
     });
-
+	
+	$('#remember').click(function(){
+	
+		if($(this).is(':checked')){
+			$('#cnpjSenhaField').fadeOut("slow",function(){
+				$('#ccmField').fadeIn();
+			});
+			
+			
+		}else{
+			$('#ccmField').fadeOut("slow", function(){
+				$('#cnpjSenhaField').fadeIn();								 
+			});
+			
+		}
+	});
+	
+	$('.datepicker').datepicker();
+	$('.datepicker').datepicker( "option", "dateFormat", "dd/mm/yy" );
+	
     $('.contact-form').on("submit", function (event) {
 
         // Stop form from submitting normally

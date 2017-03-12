@@ -167,6 +167,7 @@ var CRUMINA = {};
         $body.toggleClass('open');
         $('.overlay_search-input').focus();
     };
+	
     /* -----------------------------
      * Embedded Video in pop up
      * ---------------------------*/
@@ -558,10 +559,12 @@ var CRUMINA = {};
         }
         return false;
     });
-    jQuery(".js-open-search").on('click', function () {
+    
+	jQuery(".js-open-search").on('click', function () {
         CRUMINA.toggleSearch();
         return false;
     });
+	
 
     jQuery(".overlay_search-close").on('click', function () {
         $body.removeClass('open');

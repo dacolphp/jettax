@@ -154,56 +154,39 @@
                 </div>
 
                 <div class="col-lg-7 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-                    <div class="skills">
-                        <div class="skills-item">
-                            <div class="skills-item-info">
-                                <span class="skills-item-title">Empresas com NFs-e Emitidas</span>
-                                <span class="skills-item-count c-gray">62%</span>
-                            </div>
-
-                            <div class="skills-item-meter bg-border-color">
-                                <span class="skills-item-meter-active bg-orange-color border-orange-color skills-animate" style="width: 62%; opacity: 1;">
-                                </span>
-                            </div>
+                    <div class="pie-chart-item">
+                        <div class="pie-chart" data-value="0.80" data-start-color="#298355" data-end-color="#3cb879"><canvas width="320" height="320"></canvas>
+                            <div class="content">80<span>%</span></div>
                         </div>
-
-                        <div class="skills-item">
-                            <div class="skills-item-info">
-                                <span class="skills-item-title">Empresas com NFs-e Recebidas</span>
-                                <span class="skills-item-count c-gray">86%</span>
-                            </div>
-
-                            <div class="skills-item-meter bg-border-color">
-                                <span class="skills-item-meter-active bg-green-color border-green-color skills-animate" style="width: 86%; opacity: 1;">
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="skills-item">
-                            <div class="skills-item-info">
-                                <span class="skills-item-title">Empresas sem Movimento</span>
-                                <span class="skills-item-count c-gray">52%</span>
-                            </div>
-
-                            <div class="skills-item-meter bg-border-color">
-                                <span class="skills-item-meter-active bg-secondary-color border-secondary-color skills-animate" style="width: 52%; opacity: 1;">
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="skills-item">
-                            <div class="skills-item-info">
-                                <span class="skills-item-title">Empresas com ISS Retido</span>
-                                <span class="skills-item-count c-gray">40%</span>
-                            </div>
-
-                            <div class="skills-item-meter bg-border-color">
-                                <span class="skills-item-meter-active bg-primary-color border-primary-color skills-animate" style="width: 40%; opacity: 1;">
-                                </span>
-                            </div>
+        
+                        <div class="pie-chart-content">
+                            <h4 class="pie-chart-content-title">Downloads efetuados</h4>
+                            <p class="pie-chart-content-text">Acesse o log para verificar os detalhes do download.</p>
+                            <a href="log.php" class="more">Abrir Log
+                                <i class="seoicon-right-arrow"></i>
+                            </a>
                         </div>
                     </div>
+                 </div>
+                 <div class="col-lg-7 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+					<p>&nbsp;</p><p>&nbsp;</p>
+           		 </div>
+                 <div class="col-lg-7 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+                    <div class="pie-chart-item">
+                <div class="pie-chart" data-value="0.20" data-start-color="#cc481d" data-end-color="#f15927"><canvas width="320" height="320"></canvas>
+                    <div class="content">20<span>%</span></div>
                 </div>
+
+                <div class="pie-chart-content">
+                    <h4 class="pie-chart-content-title">Downloads não efetuados</h4>
+                    <p class="pie-chart-content-text">Acesse o log para verificar os motivos pelo qual o download não foi efetuado.
+                    </p>
+                    <a href="log.php" class="more">Abrir Log
+                        <i class="seoicon-right-arrow"></i>
+                    </a>
+                </div>
+            </div>
+                 </div>
             </div>
         </div>
     </div>

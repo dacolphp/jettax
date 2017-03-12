@@ -152,7 +152,23 @@
                             </span>
                         </div>
                     </div>
-                        <div class="row">
+                        <div class="remember-wrap">
+
+                        <div class="checkbox">
+                            <input id="remember" type="checkbox" name="remember" value="remember">
+                           <label for="remember" class="input-title" style="color:#FFF;">Utilizar a senha web da contabilidade</label>
+                        </div>
+						<br />
+                    </div>
+                    <div class="row" id="ccmField" style="display:none;">
+                        <div class="col-lg-12">
+                            <label for="contact_website" class="input-title">Digite o CCM do Cliente<abbr class="required" title="required">*</abbr></label>
+                            <span class="checked-icon">
+                                <input class="email focus-white input-standard-grey input-dark" id="contact_website" name="permalink" required="" placeholder="" type="url">
+                            </span>
+                        </div>
+                    </div>
+                        <div class="row" id="cnpjSenhaField">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <label for="contact_name" class="input-title">CNPJ<abbr class="required" title="required">*</abbr></label>
                                 <span class="checked-icon">
@@ -173,7 +189,7 @@
 
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                                <label for="contact_phone" class="input-title">Apelido <span class="optional">(optional)</span></label>
+                                <label for="contact_phone" class="input-title">Nome do Responsável <span class="optional">(opicional)</span></label>
 
                                 <input class="email focus-white input-standard-grey input-dark" id="contact_phone" name="phone" placeholder="" type="text">
 
@@ -181,7 +197,7 @@
 
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                                <label for="contact_company" class="input-title">E-mail do Responsável <span class="optional">(optional)</span></label>
+                                <label for="contact_company" class="input-title">E-mail do Responsável <span class="optional">(opicional)</span></label>
 
                                 <input class="email focus-white input-standard-grey input-dark" id="contact_company" name="company" placeholder="" type="text">
 
@@ -496,6 +512,7 @@
 <script src="js/velocity.min.js"></script>
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/animation.velocity.min.js"></script>
+
 
 <!-- ...end JS Script -->
 

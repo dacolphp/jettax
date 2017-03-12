@@ -32,6 +32,92 @@
 
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 
+	<style>
+
+		.trListagem1:hover, .trListagem2:hover{
+			background-color:#dedede;
+		}
+		
+		.trListagem2{
+			height:40px; background-color:#F3F3F3;
+		}
+		
+		.trListagem1{
+			height:40px;
+		}
+		
+		.descricaoTabela{
+			margin-top: 20px;;
+			font-size: 13px;
+			font-weight: 400;
+			color: #2f2c2c;
+			font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;	
+			text-align:center;
+		}
+		
+		.cabTabela{
+			height:60px;
+			background-color:#E9E9E9;
+		}
+		.cabTabelaItem{
+			margin-top:15px;
+		}
+		.btn-info{
+			background-color: #65BBD6;
+			border-color: #65BBD6;
+			color: #FFFFFF;
+			display: inline-block;
+			padding: 6px;
+			margin-bottom: 0;
+			font-size: 10px;
+			width:80px;
+			height:25px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			-ms-touch-action: manipulation;
+			touch-action: manipulation;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			background-image: none;
+			border: 1px solid transparent;
+			border-radius: 4px;
+		}
+		
+		.label{
+			display: inline;
+			padding: .2em .6em .3em;
+			font-size: 75%;
+			font-weight: 700;
+			line-height: 1;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: baseline;
+			border-radius: .25em;	
+		}
+		
+		.ativo{
+			background-color:#5cb85c;
+		}
+		
+		.bloqueado{
+			background-color:#d9534f;
+		}
+		
+		.dataTables_paginate{
+			    float: right;
+			    margin: 0px;
+				margin-right: 15px !important;
+		}
+
+		
+    </style>
 </head>
 
 
@@ -150,286 +236,203 @@
                         </form>
                     </div>
                   
-                            
-                    <div class="cart">
-
-                        <h1 class="cart-title">Você tem <span class="c-primary"> 4 clientes</span> cadastrados</h1>
-
+                                      <table class="listagem">
+                                                <thead>
+                                                    <tr class="cabTabela">
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-briefcase cabTabelaItem"></i> Razão Social </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa fa-user cabTabelaItem"></i> CNPJ / CCM </th>
+                                                             <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa  fa-envelope cabTabelaItem"></i> E-mail </th>
+                                                        <th style="text-align:center; font-size:15px;">
+                                                            <i class="fa  fa-cloud cabTabelaItem"></i> Status </th>
+                                                        <th> </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                   <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="trListagem1" height="10">
+                                                        <td class="descricaoTabela">
+                                                            ITLS Treinamentos LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 93.452.545/0001-40 </td>
+                                                        <td class="descricaoTabela"> gessica.pinto@itls.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label ativo">Ativo</span> </td>
+                                                        <td>
+                                                              <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                              <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                     <tr class="trListagem2"  height="10" style="">
+                                                        <td class="descricaoTabela">
+                                                            Contjet Contabilidade LTDA - EPP
+                                                        </td>
+                                                        <td class="descricaoTabela"> 12.342.542/0001-43 </td>
+                                                        <td class="descricaoTabela"> joao@contjet.com.br </td>
+                                                        <td  class="descricaoTabela"> <span class="label bloqueado">Bloquado</span> </td>
+                                                        <td>
+                                                           <a class="btn btn-info"><i class="fa fa-edit"></i> Editar <span class="caret"></span></a>
+                                                           <a class="btn btn-info" style="background-color:#E15554; border-color:#E15554"><i class="fa fa-trash-o"></i> Excluir <span class="caret"></span></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+									<div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navigation">
+    
+                            <a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>2</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>3</span></a>
+                            <a href="#" class="page-numbers bg-border-color" style="background-color:#EFEFEF"><span>4</span></a>
+    
+                        </nav>
                     </div>
-
-                    <form action="#" method="post" class="cart-main">
-
-                        <table class="shop_table cart">
-                            <thead class="cart-product-wrap-title-main">
-                            <tr>
-                                <th class="product-remove">&nbsp;</th>
-                                <th class="product-thumbnail">Razão Social</th>
-                                <th class="product-price">CNPJ</th>
-                                <th class="product-quantity">E-mail</th>
-                                <th class="product-subtotal">Senha Web</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-
-                          <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-                            <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-                            <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-                            <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-                            <tr class="cart_item">
-
-                                <td class="product-remove">
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                       <img src="img/edit-32.png" />
-                                    </a>
-                                    <a href="#" class="product-del remove" style="display:inline; padding:0px 12px;" title="Remove this item">
-                                        <i class="seoicon-delete-bold"></i>
-                                    </a>
-                                    
-                                </td>
-
-                                <td class="product-thumbnail">
-
-                                    <div class="cart-product__item">
-                                      <div class="cart-product-content">
-                                            <p class="cart-author">ITLS Serviços</p>
-                                            <h6 class="cart-product-title">ITLS Treinamentos LTDA - EPP</h5>
-                                        </div>
-                                    </div>
-                                </td>
-
-                                <td class="product-price">
-                                    <h6 class="price amount">43.432.435/0001-45</h5>
-                                </td>
-
-                                <td class="product-quantity">
-
-                                    <div class="quantity">
-                                        ricardo.contini@itls.com.br
-                                    </div>
-
-                                </td>
-
-                                <td class="product-subtotal">
-                                    <h6 class="total amount">44324235</h5>
-                                </td>
-
-                            </tr>
-
-                            </tbody>
-                        </table>
-
-
-                    </form>
-
-                   <div class="row" style=" background-color:#FFF;">
-				<div class="col-lg-12">
-					<nav class="navigation">
-
-						<a href="#" class="page-numbers current bg-border-color"><span>1</span></a>
-						<a href="#" class="page-numbers bg-border-color"><span>2</span></a>
-						<a href="#" class="page-numbers bg-border-color"><span>3</span></a>
-						<a href="#" class="page-numbers bg-border-color"><span>4</span></a>
-						<a href="#" class="page-numbers next">
-							<svg class="btn-next">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
-							</svg>
-						</a>
-
-					</nav>
-				</div>
-			</div>
+                </div>
 
                 </div>
 
